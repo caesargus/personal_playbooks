@@ -1,14 +1,8 @@
 ---
 - hosts: cloudatcost
   vars:
-  remote_user: caesarabby
-  sudo: yes
   tasks:
     - name: Update apt-cache
       apt: update_cache=yes
     - name: Install Git
       apt: name=git-core state=present
-    - name: Install vim
-      apt: name=vim state=present
-    - name: Install emacs
-      apt: name=emacs state=present

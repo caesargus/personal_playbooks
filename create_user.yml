@@ -3,7 +3,5 @@
   tasks:
     - name: Update apt-cache
       apt: update_cache=yes
-    - name: install zsh
-      apt: name=zsh state=present
-    - name: Add user (caesarabby)
-      user: name=caesarabby comment="Caesar Abby" groups=sudo shell=/bin/zsh
+    - name: Add user (<NAME>) - with preferred shell - zsh
+      user: name=<NAME> comment="" groups=sudo shell=/bin/zsh

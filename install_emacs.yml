@@ -1,0 +1,6 @@
+---
+- hosts: cloudatcost
+  vars:
+  tasks:
+    - name: Install emacs
+      apt: name=emacs state=present

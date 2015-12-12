@@ -1,0 +1,9 @@
+---
+- hosts: cloudatcost
+  vars:
+  tasks:
+    - name: install dovecot-imapd
+      apt: name=dovecot-imapd state=present
+    - name: install dovecot-pop3d
+      apt: name=dovecot-pop3d state=present
+

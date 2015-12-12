@@ -1,0 +1,6 @@
+---
+- hosts: cloudatcost
+  vars:
+  tasks:
+    - name: install zsh
+      apt: name=zsh state=present
