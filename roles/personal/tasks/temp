@@ -1,0 +1,7 @@
+- name: create symlink for vim, vimrc, tmux.conf
+  file: src=/home/vagrant/Documents/code/dotfiles/{{ item.src }} dest=/home/vagrant/{{ item.dest }}
+  with_items:
+    - { src: vim       dest: .vim }
+    - { src: vimrc     dest: .vimrc }
+    - { src: tmux.conf dest: .tmux.conf }
+

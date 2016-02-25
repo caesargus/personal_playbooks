@@ -1,0 +1,4 @@
+---
+# roles/personal/tasks/create_code_directory.yml
+- name: Create Documents/code directory
+  file: path="{{ directory }}" state=directory

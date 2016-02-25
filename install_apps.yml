@@ -1,0 +1,9 @@
+- hosts: localhost
+  become: yes
+  become_user: root
+  pre_tasks:
+    - shell: echo 'hello'
+  roles:
+    - root
+  post_tasks:
+    - shell: echo 'goodbye'

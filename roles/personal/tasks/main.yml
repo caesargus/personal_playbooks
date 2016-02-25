@@ -1,0 +1,4 @@
+---
+# roles/personal/tasks/main.yml
+- include: create_directory.yml directory=/home/vagrant/Documents/code
+- include: github_dotfiles.yml 

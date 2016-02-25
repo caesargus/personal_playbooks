@@ -1,0 +1,9 @@
+---
+# tasks/github_dotfiles
+- name: checkout dotfiles
+  git: repo=git@github.com:caesargus/dotfiles.git
+       dest=/home/vagrant/Documents/code/dotfiles/
+       accept_hostkey=true
+       key_file=/home/vagrant/.ssh/github_id_rsa
+- name: run shell - bootstrap.sh
+  echo: Remember to run the bootstrap.sh

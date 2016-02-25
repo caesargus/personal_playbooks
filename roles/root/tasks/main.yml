@@ -1,0 +1,4 @@
+---
+# roles/personal/tasks/main.yml
+- include: install_basic_application.yml app=tmux
+- include: install_basic_application.yml app=git
